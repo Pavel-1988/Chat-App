@@ -1,5 +1,6 @@
 import React from 'react'
-import TextField from '@mui/material/TextField';
+
+// import TextField from '@mui/material/TextField';
 
 const Register = () => {
   return (
@@ -9,10 +10,14 @@ const Register = () => {
         <span className='title'>Register</span>
         <form action="">
           <input type="text" placeholder='display name' />
-          <TextField id="outlined-basic" label="email" variant="outlined"  />
-          {/* <input type="email" placeholder='email' /> */}
+          {/* <TextField id="outlined-basic" label="email" variant="outlined"  /> */}
+          <input type="email" placeholder='email' />
           <input type="password" placeholder='password' />
-          <input type="file" />
+          <input style={{display:"none"}}type="file" id="file" />
+          <label htmlFor="file">
+            <img src='' alt="" />
+            <span> Add an avatar</span>
+          </label>
           <button>Sing Up</button>
         </form>
         <p>Do you have an account? Login</p>
