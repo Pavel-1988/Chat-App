@@ -1,5 +1,5 @@
 import React from 'react'
-
+import addAvatar from "../img/addAvatar.png"
 // import TextField from '@mui/material/TextField';
 
 const Register = () => {
@@ -15,7 +15,7 @@ const Register = () => {
           <input type="password" placeholder='password' />
           <input style={{display:"none"}}type="file" id="file" />
           <label htmlFor="file">
-            <img src='' alt="" />
+            <img src={addAvatar} alt="" />
             <span> Add an avatar</span>
           </label>
           <button>Sing Up</button>
