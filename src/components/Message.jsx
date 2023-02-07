@@ -4,7 +4,7 @@ import Pers from '../img/olgarepina.jpg'
 
 const Message = () => {
   return (
-    <div className='message'>
+    <div className='message owner'>
       <div className="messageInfo">
         <img src={Pers} alt="" />
         <span>just now</span>
