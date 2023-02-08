@@ -14,9 +14,10 @@
   }
 }
 
+// $darkColor: #2f2d52;
 
 .formContainer{
-  background-color: #b5c3f3;
+  background-color: #a7bcff;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -103,6 +104,7 @@
     .sidebar{
       flex: 1;
       background-color: #3e3c61;
+      position: relative;
 
       .navbar{
         display: flex;

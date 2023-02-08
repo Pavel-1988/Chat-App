@@ -2,13 +2,25 @@ import React from 'react'
 import addAvatar from "../img/addAvatar.png"
 // import TextField from '@mui/material/TextField';
 
+
+
 const Register = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(e.target[0].value)
+    const displayName = e.target[0].value;
+    const email = e.target[1].value;
+    const password = e.target[2].value;
+    const file = e.target[3].files[0];
+}
+
   return (
     <div className='formContainer'>
       <div className='formWrapper'>
         <span className='logo'>Pasha Chat</span>
         <span className='title'>Register</span>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <input type="text" placeholder='display name' />
           {/* <TextField id="outlined-basic" label="email" variant="outlined"  /> */}
           <input type="email" placeholder='email' />
